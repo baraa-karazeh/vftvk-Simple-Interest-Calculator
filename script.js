@@ -16,7 +16,7 @@
     
     /* validates the input values entered by a user to output the result*/
     if( principal<=0){
-        alert("Please enter a posiive number in the amount area to compute the interest");
+        alert("Please enter a posiive number");
         document.querySelector("input").focus();
     }
     else{
@@ -28,7 +28,7 @@
     {
         let showPrincipal="\<br\>If you deposit "+`<mark>${principal}</mark>`;
         let showRate=",\<br\>at an interest rate of "+`<mark>${rate}</mark>`;
-        let showInterest="%.\<br\>You will receive an amount of "+`<mark>${interest.toFixed(0)}</mark>`;
+        let showInterest="%.\<br\>You will receive an amount of "+`<mark>${interest.toFixed(2)}</mark>`;
         let showYear=",\<br\>in the year "+`<mark>${year}</mark>`+"\<br\>";
 
         let output=document.getElementById("result").innerHTML=showPrincipal+showRate+showInterest+showYear;
