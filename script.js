@@ -16,7 +16,7 @@
     
     /* validates the input values entered by a user to output the result*/
     if( principal<=0){
-        alert("Please enter a posiive number");
+        alert("Please enter a positive number");
         document.querySelector("input").focus();
     }
     else{
