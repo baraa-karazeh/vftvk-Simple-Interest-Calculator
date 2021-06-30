@@ -20,6 +20,7 @@
         document.querySelector("input").focus();
     }
     else{
+
         return output();
     }
 
